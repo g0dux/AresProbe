@@ -8,107 +8,107 @@
   [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
   [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
   
-  **Mais poderoso que Burp Suite + SQLMap combinados**
+  **More powerful than Burp Suite + SQLMap combined**
   
   ---
 </div>
 
-## 📋 Sobre o Projeto
+## 📋 About The Project
 
-AresProbe é uma ferramenta de teste de segurança web avançada que combina as funcionalidades do Burp Suite e SQLMap, mas com maior eficiência e uma interface de terminal poderosa. Desenvolvida para profissionais de segurança que precisam de uma ferramenta completa e modular.
+AresProbe is an advanced web security testing tool that combines the functionalities of Burp Suite and SQLMap, but with greater efficiency and a powerful terminal interface. Developed for security professionals who need a complete and modular tool.
 
-## 🚀 Características Principais
+## 🚀 Key Features
 
-### 🔍 Testes de Segurança Avançados
-- **SQL Injection**: Múltiplas técnicas (Boolean-based, Time-based, Union-based, Error-based, Stacked queries)
-- **XSS (Cross-Site Scripting)**: Detecção de vulnerabilidades XSS com payloads avançados
-- **Directory Traversal**: Teste de vulnerabilidades de travessia de diretório
-- **Command Injection**: Detecção de injeção de comandos do sistema
-- **XXE (XML External Entity)**: Teste de vulnerabilidades XXE
-- **SSRF (Server-Side Request Forgery)**: Detecção de vulnerabilidades SSRF
+### 🔍 Advanced Security Testing
+- **SQL Injection**: Multiple techniques (Boolean-based, Time-based, Union-based, Error-based, Stacked queries)
+- **XSS (Cross-Site Scripting)**: XSS vulnerability detection with advanced payloads
+- **Directory Traversal**: Directory traversal vulnerability testing
+- **Command Injection**: System command injection detection
+- **XXE (XML External Entity)**: XXE vulnerability testing
+- **SSRF (Server-Side Request Forgery)**: SSRF vulnerability detection
 
-### 🌐 Proxy HTTP/HTTPS
-- Interceptação de tráfego em tempo real
-- Suporte completo a HTTPS com tunneling
-- Análise de requisições e respostas
-- Modificação de tráfego em tempo real
+### 🌐 HTTP/HTTPS Proxy
+- Real-time traffic interception
+- Full HTTPS support with tunneling
+- Request and response analysis
+- Real-time traffic modification
 
-### 📊 Relatórios Detalhados
-- Relatórios em múltiplos formatos (JSON, HTML, TXT)
-- Análise detalhada de vulnerabilidades
-- Métricas de performance e tempo de resposta
-- Exportação de dados para análise posterior
+### 📊 Detailed Reports
+- Reports in multiple formats (JSON, HTML, TXT)
+- Detailed vulnerability analysis
+- Performance metrics and response time
+- Data export for further analysis
 
-### 🔧 Interface Modular
-- CLI interativa e intuitiva
-- Sistema de plugins extensível
-- Gerenciamento de sessões avançado
-- Logging detalhado com níveis configuráveis
+### 🔧 Modular Interface
+- Interactive and intuitive CLI
+- Extensible plugin system
+- Advanced session management
+- Detailed logging with configurable levels
 
-## 📦 Instalação
+## 📦 Installation
 
-### Pré-requisitos
-- Python 3.8 ou superior
-- pip (gerenciador de pacotes Python)
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package manager)
 
-### Instalação Rápida
+### Quick Installation
 
-#### Windows (Recomendado)
+#### Windows (Recommended)
 ```bash
-# Clone o repositório
+# Clone the repository
 git clone https://github.com/g0dux/AresProbe.git
 cd AresProbe
 
-# Crie um ambiente virtual
+# Create a virtual environment
 python -m venv venv
 
-# Ative o ambiente virtual
+# Activate the virtual environment
 venv\Scripts\activate
 
-# Instalação automática para Windows
+# Automatic installation for Windows
 python install_windows.py
 
-# Ou instalação manual
+# Or manual installation
 pip install -r requirements-windows.txt
 
-# Execute o AresProbe
+# Run AresProbe
 python main.py
 ```
 
 #### Linux/Mac
 ```bash
-# Clone o repositório
+# Clone the repository
 git clone https://github.com/g0dux/AresProbe.git
 cd AresProbe
 
-# Crie um ambiente virtual
+# Create a virtual environment
 python -m venv venv
 
-# Ative o ambiente virtual
+# Activate the virtual environment
 source venv/bin/activate
 
-# Instale as dependências
+# Install dependencies
 pip install -r requirements.txt
 
-# Execute o AresProbe
+# Run AresProbe
 python main.py
 ```
 
-### Solução de Problemas Windows
+### Windows Troubleshooting
 
-Se você encontrar problemas com `uvloop` no Windows:
-- Use `requirements-windows.txt` em vez de `requirements.txt`
-- Execute `python install_windows.py` para instalação automática
-- O `uvloop` não é compatível com Windows, mas o AresProbe funciona perfeitamente sem ele
+If you encounter issues with `uvloop` on Windows:
+- Use `requirements-windows.txt` instead of `requirements.txt`
+- Run `python install_windows.py` for automatic installation
+- `uvloop` is not compatible with Windows, but AresProbe works perfectly without it
 
-## 🎯 Uso Rápido
+## 🎯 Quick Usage
 
-### Modo Interativo
+### Interactive Mode
 ```bash
 python main.py
 ```
 
-### Scan Rápido
+### Quick Scan
 ```bash
 python main.py --scan http://example.com
 ```
@@ -118,64 +118,64 @@ python main.py --scan http://example.com
 python main.py --proxy 8080
 ```
 
-## 📖 Comandos Principais
+## 📖 Main Commands
 
-### Scan de Segurança
+### Security Scan
 ```bash
-# Scan completo
+# Comprehensive scan
 scan http://example.com --type comprehensive
 
-# Scan específico de SQL Injection
+# SQL Injection specific scan
 scan http://example.com --type sql
 
-# Scan com proxy habilitado
+# Scan with proxy enabled
 scan http://example.com --proxy --threads 20
 ```
 
-### Gerenciamento de Proxy
+### Proxy Management
 ```bash
-# Iniciar proxy
+# Start proxy
 proxy start 8080
 
-# Verificar status
+# Check status
 proxy status
 
-# Ver requisições interceptadas
+# View intercepted requests
 proxy requests
 
-# Limpar dados interceptados
+# Clear intercepted data
 proxy clear
 ```
 
-### Relatórios
+### Reports
 ```bash
-# Gerar relatório
+# Generate report
 report generate
 
-# Mostrar últimos resultados
+# Show latest results
 report show
 
-# Exportar em diferentes formatos
+# Export in different formats
 report export json
 report export html
 ```
 
-## 🔧 Configuração Avançada
+## 🔧 Advanced Configuration
 
-### Variáveis de Ambiente
+### Environment Variables
 ```bash
-# Configurar nível de log
+# Configure log level
 export ARESPROBE_LOG_LEVEL=DEBUG
 
-# Configurar timeout padrão
+# Configure default timeout
 export ARESPROBE_TIMEOUT=60
 
-# Configurar número de threads
+# Configure number of threads
 export ARESPROBE_THREADS=20
 ```
 
-### Arquivo de Configuração
-Crie um arquivo `config.json` na raiz do projeto:
+### Configuration File
+Create a `config.json` file in the project root:
 ```json
 {
     "default_timeout": 30,
@@ -187,48 +187,48 @@ Crie um arquivo `config.json` na raiz do projeto:
 }
 ```
 
-## 🛡️ Recursos de Segurança
+## 🛡️ Security Features
 
-### Proteções Implementadas
-- Validação rigorosa de entrada
-- Sanitização de payloads maliciosos
-- Rate limiting para evitar sobrecarga
-- Logging de todas as operações
-- Verificação de permissões
+### Implemented Protections
+- Strict input validation
+- Malicious payload sanitization
+- Rate limiting to prevent overload
+- Logging of all operations
+- Permission verification
 
-### Boas Práticas
-- Use apenas em ambientes autorizados
-- Mantenha logs de todas as operações
-- Atualize regularmente as dependências
-- Monitore o uso de recursos
+### Best Practices
+- Use only in authorized environments
+- Keep logs of all operations
+- Regularly update dependencies
+- Monitor resource usage
 
-## 📚 Documentação
+## 📚 Documentation
 
-### Estrutura do Projeto
+### Project Structure
 ```
 aresprobe/
-├── core/           # Módulos principais
-│   ├── engine.py   # Motor principal
-│   ├── proxy.py    # Servidor proxy
-│   ├── scanner.py  # Scanner de vulnerabilidades
-│   ├── sql_injector.py  # Engine de SQL injection
-│   ├── session.py  # Gerenciador de sessões
-│   └── logger.py   # Sistema de logging
-├── cli/            # Interface de linha de comando
-│   ├── interface.py # CLI principal
-│   └── commands.py  # Implementação de comandos
-└── plugins/        # Sistema de plugins
+├── core/           # Core modules
+│   ├── engine.py   # Main engine
+│   ├── proxy.py    # Proxy server
+│   ├── scanner.py  # Vulnerability scanner
+│   ├── sql_injector.py  # SQL injection engine
+│   ├── session.py  # Session manager
+│   └── logger.py   # Logging system
+├── cli/            # Command line interface
+│   ├── interface.py # Main CLI
+│   └── commands.py  # Command implementation
+└── plugins/        # Plugin system
 ```
 
-### API de Desenvolvimento
+### Development API
 ```python
 from aresprobe import AresEngine, ScanConfig, ScanType
 
-# Inicializar engine
+# Initialize engine
 engine = AresEngine()
 engine.initialize()
 
-# Configurar scan
+# Configure scan
 config = ScanConfig(
     target_url="http://example.com",
     scan_types=[ScanType.SQL_INJECTION, ScanType.XSS],
@@ -236,43 +236,43 @@ config = ScanConfig(
     timeout=30
 )
 
-# Executar scan
+# Execute scan
 results = engine.run_scan(config)
 
-# Gerar relatório
+# Generate report
 report = engine.generate_report("report.html")
 ```
 
-## 🤝 Contribuição
+## 🤝 Contributing
 
-Contribuições são bem-vindas! Por favor:
+Contributions are welcome! Please:
 
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+1. Fork the project
+2. Create a branch for your feature (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📄 Licença
+## 📄 License
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## ⚠️ Aviso Legal
+## ⚠️ Legal Disclaimer
 
-Esta ferramenta é destinada apenas para testes de segurança autorizados. O uso não autorizado é estritamente proibido e pode violar leis locais e internacionais. Os desenvolvedores não se responsabilizam pelo uso indevido desta ferramenta.
+This tool is intended for authorized security testing only. Unauthorized use is strictly prohibited and may violate local and international laws. The developers are not responsible for misuse of this tool.
 
-## 📞 Suporte
+## 📞 Support
 
 - **Issues**: [GitHub Issues](https://github.com/g0dux/AresProbe/issues)
-- **Documentação**: [Wiki](https://github.com/g0dux/AresProbe/wiki)
-- **Discord**: [Servidor da Comunidade](https://discord.gg/aresprobe)
+- **Documentation**: [Wiki](https://github.com/g0dux/AresProbe/wiki)
+- **Discord**: [Community Server](https://discord.gg/aresprobe)
 
-## 🏆 Reconhecimentos
+## 🏆 Acknowledgments
 
-- Inspirado no Burp Suite e SQLMap
-- Comunidade de segurança open source
-- Contribuidores e testadores
+- Inspired by Burp Suite and SQLMap
+- Open source security community
+- Contributors and testers
 
 ---
 
-**AresProbe** - Mais poderoso que Burp Suite + SQLMap, com a eficiência que você precisa.
+**AresProbe** - More powerful than Burp Suite + SQLMap, with the efficiency you need.
