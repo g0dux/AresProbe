@@ -1,4 +1,19 @@
-# AresProbe - Advanced Web Security Testing Framework
+<div align="center">
+  <img src="assets/logo-aresprobe.png" alt="AresProbe Logo" width="400"/>
+  
+  # AresProbe
+  ### Advanced Web Security Testing Framework
+  
+  [![GitHub](https://img.shields.io/badge/GitHub-g0dux%2FAresProbe-blue?logo=github)](https://github.com/g0dux/AresProbe)
+  [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
+  [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+  
+  **Mais poderoso que Burp Suite + SQLMap combinados**
+  
+  ---
+</div>
+
+## 📋 Sobre o Projeto
 
 AresProbe é uma ferramenta de teste de segurança web avançada que combina as funcionalidades do Burp Suite e SQLMap, mas com maior eficiência e uma interface de terminal poderosa. Desenvolvida para profissionais de segurança que precisam de uma ferramenta completa e modular.
 
@@ -41,8 +56,8 @@ AresProbe é uma ferramenta de teste de segurança web avançada que combina as 
 #### Windows (Recomendado)
 ```bash
 # Clone o repositório
-git clone https://github.com/aresprobe/aresprobe.git
-cd aresprobe
+git clone https://github.com/g0dux/AresProbe.git
+cd AresProbe
 
 # Crie um ambiente virtual
 python -m venv venv
@@ -63,8 +78,8 @@ python main.py
 #### Linux/Mac
 ```bash
 # Clone o repositório
-git clone https://github.com/aresprobe/aresprobe.git
-cd aresprobe
+git clone https://github.com/g0dux/AresProbe.git
+cd AresProbe
 
 # Crie um ambiente virtual
 python -m venv venv
@@ -248,8 +263,8 @@ Esta ferramenta é destinada apenas para testes de segurança autorizados. O uso
 
 ## 📞 Suporte
 
-- **Issues**: [GitHub Issues](https://github.com/aresprobe/aresprobe/issues)
-- **Documentação**: [Wiki](https://github.com/aresprobe/aresprobe/wiki)
+- **Issues**: [GitHub Issues](https://github.com/g0dux/AresProbe/issues)
+- **Documentação**: [Wiki](https://github.com/g0dux/AresProbe/wiki)
 - **Discord**: [Servidor da Comunidade](https://discord.gg/aresprobe)
 
 ## 🏆 Reconhecimentos
