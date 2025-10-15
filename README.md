@@ -263,9 +263,9 @@ This tool is intended for authorized security testing only. Unauthorized use is 
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/g0dux/AresProbe/issues)
-- **Documentation**: [Wiki](https://github.com/g0dux/AresProbe/wiki)
-- **Discord**: [Community Server](https://discord.gg/aresprobe)
+- **Issues**: [NONE](https://github.com/g0dux/AresProbe/issues)
+- **Documentation**: [NONE](https://github.com/g0dux/AresProbe/wiki)
+- **Discord**: [NONE](https://discord.gg/aresprobe)
 
 ## 🏆 Acknowledgments
 
